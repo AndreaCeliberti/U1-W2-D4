@@ -109,6 +109,16 @@ valore bound 400 true
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
+const check3and7 = function (h1) {
+  if ((h1 % 3 && h1 % 7) === 0) {
+    return check;
+  }
+};
+const check = true;
+const differenza = check3and7(21);
+
+console.log("valore check", differenza);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
