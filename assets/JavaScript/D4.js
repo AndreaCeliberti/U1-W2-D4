@@ -68,14 +68,33 @@ console.log("valore parametri diversi", diffUp);
 
 console.log("valore parametri uguali", diffUnder);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+D4.js:67 valore parametri diversi 4.2631578947368425
+D4.js:69 valore parametri uguali 0.3157894736842105
+ */
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (bond1) {
+  if ((bond1 > 20 && bond1 <= 100) || bond1 === 400) {
+    return result;
+  }
+};
+const result = true;
+const valore = boundary(400);
+
+console.log("valore bound 400", valore);
+
+/*
+valore bound 10 undefined
+ valore bound 66 true
+ valore bound 100 true
+valore bound 110 undefined
+valore bound 400 true
+ */
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
