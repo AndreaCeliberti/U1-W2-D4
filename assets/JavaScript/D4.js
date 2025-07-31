@@ -11,7 +11,8 @@ const totale = area(6, 4);
 console.log("area rettangolo", totale);
 
 /* 
-D4.js:11 area rettangolo 8
+D4.js:11 area rettangolo 24
+
 */
 
 /* ESERCIZIO 2
@@ -20,12 +21,52 @@ D4.js:11 area rettangolo 8
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (p1, p2) {
+  const result = p1 + p2;
+
+  if (p1 === p2) {
+    return result * 3;
+  }
+
+  return result;
+};
+
+const crazy = crazySum(7, 5);
+const crazyM = crazySum(5, 5);
+
+console.log("valore parametri diversi", crazy);
+
+console.log("valore parametri uguali", crazyM);
+/* 
+
+D4.js:37 valore parametri diversi 12
+
+D4.js:38 valore parametri uguali 30
+
+
+*/
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
+
+const crazyDiff = function (n1) {
+  const result = n1 / 19;
+
+  if (n1 > 19) {
+    return result * 3;
+  }
+
+  return result;
+};
+
+const diffUp = crazyDiff(27);
+const diffUnder = crazyDiff(6);
+
+console.log("valore parametri diversi", diffUp);
+
+console.log("valore parametri uguali", diffUnder);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
